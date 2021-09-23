@@ -15,13 +15,8 @@ function animation() {
     wheelBtn.classList.toggle("animation-in-process");
     counter++;
   } else {
-    // firstWrapper.style.display = "none";
-    // secondWrapper.style.display = "block";
-    // getPrizes.style.display = "none";
-    // redirectLink.style.display = "flex";
     wheel.classList.toggle("step-2");
     wheelBtn.classList.toggle("animation-in-process");
-    // closePopup.style.display = "none";
     counter++;
   }
   function modalPopup() {
@@ -36,13 +31,6 @@ function animation() {
       setTimeout(() => form.classList.add("form-active"), 1000);
       setTimeout(() => overlay.classList.add("overlay-active"), 1000)
     }
-    // overlay.classList.toggle("overlay-active");
   }
   setTimeout(modalPopup, 5500);
-}
-
-function closeModal() {
-  // modal.classList.toggle("modal-active");
-  // overlay.classList.toggle("overlay-active");
-  // wheelBtn.classList.toggle("animation-in-process");
 }
