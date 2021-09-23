@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <title>BONS</title>
+  <link rel="shortcut icon" type="image/x-icon" href="" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+  <div id="overlay"></div>
+  <header class="header">
+    <a href="">
+      <img class="header__logo" src="./img/desktop/logo.png" alt="logo" />
+    </a>
+  </header>
+  <div class="wrapper">
+    <div class="cosmonaut1">
+      <img class="cosmonaut-desktop" src="./img/desktop/girl1.png" alt="" />
+    </div>
+    <div class="cosmonaut2">
+      <img class="cosmonaut-desktop" src="./img/desktop/girl2.png" alt="" />
+    </div>
+
+    <div class="wheel-wrapper">
+      <img class="wheel--arrow" src="./img/desktop/arrow.png" alt="wheel-arrow" />
+      <img class="wheel--outside" src="./img/desktop/stroke.png" alt="wheel-outside" />
+      <div class="wheel--inside__wrapper" id="wheel"><img class="wheel--inside" src="./img/desktop/main.png"
+          alt="wheel-inside" /></div>
+      <div class="wheel-btn" id="button" onclick="animation()">
+        <img src="./img/desktop/btn.png" alt="" />
+      </div>
+    </div>
+    <img class="modal__stars--left" id="modalStarsLeft" src="./img/desktop/popup-stars.png" alt="">
+    <img class="modal__stars--right" id="modalStarsRight" src="./img/desktop/popup-stars.png" alt="">
+    <div class="modal--1 modal" id="modal">
+      <div class="modal__text-wrapper" id="firstWrapper">
+        <p class="modal__title">YOU WON</p>
+        <p class="modal__text">200% bonus on 1st deposit</p>
+      </div>
+    </div>
+    <div class="modal--2 modal" id="modal2">
+      <div class="modal__text-wrapper" id="secondWrapper">
+        <img class="modal__smile" src="./img/desktop/wink.png" alt="wink">
+        <p class="modal__text">
+          Try again
+        </p>
+      </div>
+    </div>
+    <div class="modal--2 modal" id="modal3">
+      <div class="modal__text-wrapper" id="thirdWrapper">
+        <p class="modal__title">YOU WON</p>
+        <p class="modal__text">200 free spins</p>
+      </div>
+    </div>
+    <form class="form" id="form">
+      <p class="form__title">Sign Up</p>
+      <p class="form__subtitle">You won 200 free spins + 200% bonus on 1st deposit</p>
+      <label class="form__label">
+        <p class="form__label-text">Email</p>
+        <input class="form__input" type="email" id="fname">
+        <p class="form__invalid-input">Please enter a valid email address</p>
+      </label>
+      <label class="form__label">
+        <p class="form__label-text">Password</p>
+        <input class="form__input" id="password-input" type="password">
+        <a href="#" class="form__password">
+          <img src="./img/desktop/eye.png" alt="eye">
+        </a>
+      </label>
+      <label class="form__label">
+        <p class="form__label-text">Nickname</p>
+        <input class="form__input">
+      </label>
+      <label class="form__label">
+        <p class="form__label-text">Currency</p>
+        <select class="form__input form__select" name="" id="">
+          <option value="UAH">UAH</option>
+        </select>
+        <img class="select__arrow" src="./img/desktop/select-arrow.png" alt="arrow">
+      </label>
+      <label class="label__checkbox">
+        <input class="checkbox-old" type="checkbox">
+        <span class="checkbox-new"></span>
+        <p class="label__checkbox-text">
+          I agree with <a href="">the terms and conditions</a>. For more information on how we process your personal
+          data please see
+          our <a href="">privacy policy</a>.
+        </p>
+      </label>
+      <label class="label__checkbox">
+        <input class="checkbox-old" type="checkbox">
+        <span class="checkbox-new"></span>
+        <p class="label__checkbox-text">I agree to receive free spins, exclusive offers and awesome updates via my
+          registered contact details. Opt out is available at any time on your profile page.</p>
+      </label>
+      <button class="form__button">Sign Up</button>
+    </form>
+    <script src="js/bundle.js"></script>
+</body>
+
+</html>
